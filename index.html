@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino's Pizzaria - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b188d2ed07.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Dino's Pizzaria Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+            <a class="telefone" href=""><i class="fa-solid fa-phone-volume"></i>Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Menu</h1>
+        <div class="menu-categories">
+            <button class="category-button active" data-category="all">Todas</button>
+            <button class="category-button" data-category="pizzas">Pizzas</button>
+            <button class="category-button" data-category="salada">Salada</button>
+            <button class="category-button" data-category="no-de-alho">Nó de Alho</button>
+            <button class="category-button" data-category="fatias">Fatias</button>
+        </div>
+
+        <section class="menu-items">
+            <!-- Pizza de Queijo -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="queijo.png" alt="Pizza de Queijo">
+                <h3>Pizza de Queijo</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Parmesão e Manjericão Fresco</p>
+                <p class="price">R$ 22,00</p>
+                <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+            </div>
+
+            <!-- Pizza de Pepperoni -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="peperoni.png" alt="Pizza de Pepperoni">
+                <h3>Pizza de Pepperoni</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Parmesão e Pepperoni de Zoe</p>
+                <p class="price">R$ 25,00</p>
+                <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+            </div>
+
+            <!-- Pizza Clássica -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="classica.png" alt="Pizza Clássica">
+                <h3>Pizza Clássica</h3>
+                <p>Molho de Tomate, Mussarela Fresca, Parmesão, Boas Anchovas, Manjericão, Alho, Óleo de Pimenta e Parmesão</p>
+                <p class="price">R$ 26,00</p>
+                <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+            </div>
+
+            <!-- Sr. Pink -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="sr-pink.png" alt="Sr. Pink">
+                <h3>Sr. Pink</h3>
+                <p>Molho de Vodka, Mussarela Fresca, Ricota, Manjericão Fresco e Parmesão</p>
+                <p class="price">R$ 28,00</p>
+                <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+            </div>
+
+            <!-- Brócolis e Limão -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="brocolis-limao.png" alt="Brócolis e Limão">
+                <h3>Brócolis e Limão</h3>
+                <p>Brócolis, Limão Preservado, Mussarela Fresca e Curada, Alho e Parmesão</p>
+                <p class="price">R$ 24,00</p>
+                <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+            </div>
+
+            <!-- Pizza Branca -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="branca.png" alt="Pizza Branca">
+                <h3>Pizza Branca</h3>
+                <p>Ricota, Mussarela Fresca e Curada, Alho e Parmesão</p>
+                <p class="price">R$ 23,00</p>
+                <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+            </div>
+
+            <!-- Salame Picante -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="salame-picante.png" alt="Salame Picante">
+                <h3>Salame Picante</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Salame Picante de Zoe, Cebolas e Parmesão</p>
+                <p class="price">R$ 27,00</p>
+                <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+            </div>
+
+            <!-- Bacon e Cebola -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="bancon-cebola.png" alt="Bacon e Cebola">
+                <h3>Bacon e Cebola</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Bacon de Zoe, Cebolas e Parmesão</p>
+                <p class="price">R$ 26,00</p>
+                <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+            </div>
+
+            <!-- Fim de Semana na Dino's -->
+            <div class="menu-item" data-category="pizzas">
+                <img src="fim-de-semana.png" alt="Fim de Semana na Dino's">
+                <h3>Fim de Semana na Dino's</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Bacon de
+                    Zoe, Abacaxi, Jalapeños em conserva da casa e Parmesão</p>
+                    <p class="price">R$ 30,00</p>
+                    <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+                </div>
+    
+                <!-- Fatia de Queijo -->
+                <div class="menu-item" data-category="fatias">
+                    <img src="fatia-queijo.png" alt="Fatia de Queijo">
+                    <h3>Fatia de Queijo</h3>
+                    <p>Fatia de queijo redonda/quadrada</p>
+                    <p class="price">R$ 7,00</p>
+                    <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+                </div>
+    
+                <!-- Fatia de Pepperoni -->
+                <div class="menu-item" data-category="fatias">
+                    <img src="fatia-pepperoni.png" alt="Fatia de Pepperoni">
+                    <h3>Fatia de Pepperoni</h3>
+                    <p>Fatia de pepperoni redonda/quadrada</p>
+                    <p class="price">R$ 8,00</p>
+                    <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+                </div>
+    
+                <!-- Fatia Branca -->
+                <div class="menu-item" data-category="fatias">
+                    <img src="fatia-branca.png" alt="Fatia Branca">
+                    <h3>Fatia Branca</h3>
+                    <p>Fatia Branca redonda</p>
+                    <p class="price">R$ 7,50</p>
+                    <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+                </div>
+    
+                <!-- Salada -->
+                <div class="menu-item" data-category="salada">
+                    <img src="salada.png" alt="Salada">
+                    <h3>Salada</h3>
+                    <p>Alface, Repolho Roxo, Parmesão e Molho</p>
+                    <p class="price">R$ 15,00</p>
+                    <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+                </div>
+    
+                <!-- Nó de Alho -->
+                <div class="menu-item" data-category="no-de-alho">
+                    <img src="no-de-alho.png" alt="Nó de Alho">
+                    <h3>Nó de Alho</h3>
+                    <p>Pão de Alho com Molho</p>
+                    <p class="price">R$ 10,00</p>
+                    <i class="fa-solid fa-cart-shopping add-to-cart" title="Adicionar ao Carrinho"></i>
+                </div>
+            </section>
+        </main>
+    
+        <!-- Pop-up do Carrinho -->
+        <div id="cart-popup" class="cart-popup">
+            <div class="popup-content">
+                <h2>Seu Carrinho</h2>
+                <div id="cart-items" class="cart-items"></div>
+                <button id="close-cart" class="close-cart">Fechar</button>
+                <button id="checkout" class="checkout">Finalizar Compra</button>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    
+    </html>
+    
